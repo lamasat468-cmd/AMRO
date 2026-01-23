@@ -19,6 +19,24 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-17891749023/BWHdCOPP4-kbEJ_ZudNC'});
 </script>
+<!-- Event snippet for انقر للاتصال conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17891749023/jAXoCLSM3-obEJ_ZudNC',
+      'value': 1.0,
+      'currency': 'SAR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
